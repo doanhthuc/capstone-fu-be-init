@@ -9,7 +9,7 @@ public class AppConfiguration implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOriginPatterns("http://localhost*")
+                .allowedOriginPatterns("http://localhost*", "https://splendid-madeleine-fb22ef.netlify.app*", "https://shop-client-c7tr.vercel.app*")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "HEAD")
                 .allowCredentials(true);
     }
